@@ -1,0 +1,101 @@
+{% extends 'dashboard/base.html' %} 
+{% load static %} 
+{% block content %}
+
+<section class="container text-center">
+  <h3>Welcome to My Study Journal</h3>
+
+  <hr> <br>
+  <div class="row">
+    <div class="col-md-4">
+      <a href="{% url 'notes' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/notes.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Notes
+            </h5>
+            Create Notes for better preperation of your studies
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-4">
+      <a href="{% url 'homework' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/homework.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Homework
+            </h5>
+            Prioritised your Homeworks and Assignments deadlines
+          </div>
+        </div>
+      </a>
+    </div>
+    
+    <div class="col-md-4">
+      <a href="{% url 'todo' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/todo.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              To Do
+            </h5>
+            Plan ahead and manage your schedule with To-do List
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <br><br><br>
+  <div class="row">
+    <div class="col-md-4 ">
+      <a href="{% url 'books' %}">
+        <div class="card mt-20">
+          <img class="card-img-top" src="{% static 'images/books.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Books
+            </h5>
+            Browse books from a list of neatly organised book menu
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+
+    <div class="col-md-4">
+      <a href="{% url 'dictionary' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/dictionary.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Dictionary
+            </h5>
+            Problem with Vocabulary! Search the Dictionary 
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="{% url 'wiki' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/wiki.jpg' %}" alt="Notes image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              WikiPedia
+            </h5>
+            Problem with Homework and Assignments? Search wikipedia to get fast results
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+
+</section>
+{% endblock content %}
